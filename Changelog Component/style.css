@@ -1,0 +1,14 @@
+:root{
+    --Main_color: hsl(0, 0%, 50%);
+    --Prime_color:#ffffff;
+    --Secondary_color: rgb(0, 0, 0);
+}
+body{
+    font-family: cursive;
+    border: var(--Secondary_color) solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
