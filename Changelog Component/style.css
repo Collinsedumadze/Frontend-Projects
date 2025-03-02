@@ -2,47 +2,64 @@
     --Main_color: hsl(0, 0%, 50%);
     --Prime_color:#ffffff;
     --Secondary_color: rgb(0, 0, 0);
+    --Imaginary_color: red;
 }
+
 body{
-    font-family: cursive;
-    border: var(--Secondary_color) solid 2px;
+    border: 1px solid var(--Imaginary_color);
+    max-width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    
 }
 
 header{
-    border: 2px solid red;
+
 }
 
 div{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.first_para{
-    border: 2px solid red;
-    background-color: aqua;
-    text-align: right;
-    padding: 0 20px;
+.first{
+    font-size: 2rem;
+    border: 1px solid red;
+    padding-right: 0.5em;
 }
 .dot{
-    background-color: red;
-    width: 12px;
-    height: 12px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    margin: 2rem;
-}
-.dot::before{
-    content: '';
-    background-color: red;
-    width: 1px;
-    height: 12px;
+    background-color: var(--Imaginary_color);
+    position: relative;
 }
 
-div p{
-    border: 2px solid red;
-    background-color: aqua;
-    text-align: left;
-    padding: 0 20px;
+.dot::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 2px;
+    height: 36px;
+    background-color: var(--Imaginary_color);
+}
+
+.dot::after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 2px;
+    height: 26px;
+    background-color: var(--Imaginary_color);
+}
+
+.second{
+    font-size: 2rem;
+    border: 1px solid red;
+    padding-left: 0.5em;
 }
