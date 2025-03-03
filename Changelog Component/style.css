@@ -6,17 +6,31 @@
 }
 
 body{
-    border: 1px solid var(--Imaginary_color);
-    max-width: 100%;
-    height: auto;
+    font-family: cursive;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    flex-direction: column;
 }
 
 header{
+    display: block;
+    text-align: center;
+}
 
+header h1{
+    font-size: clamp(1.3rem, 24px, 2.5vh);
+}
+
+header p{
+    font-size: clamp(0.7rem, 15px, 1.7vh);
+    text-align: left;
+}
+
+.changelog-container{
+    margin: 0 auto;
 }
 
 div{
@@ -24,42 +38,49 @@ div{
     justify-content: space-between;
     align-items: center;
 }
+
 .first{
-    font-size: 2rem;
-    border: 1px solid red;
-    padding-right: 0.5em;
+    color: var(--Main_color);
+    font-size: clamp(0.7rem, 15px, 1.7vh);
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
 }
+
 .dot{
     display: inline-block;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: var(--Imaginary_color);
+    margin-right: 1.5rem;
+    background-color: var(--Secondary_color);
     position: relative;
 }
 
 .dot::before{
     content: "";
     position: absolute;
-    top: -10px;
+    top: -20px;
     left: 50%;
     width: 2px;
     height: 36px;
-    background-color: var(--Imaginary_color);
+    background-color: var(--Secondary_color);
 }
 
 .dot::after{
     content: "";
     position: absolute;
-    top: 15px;
+    top: 10px;
     left: 50%;
     width: 2px;
-    height: 26px;
-    background-color: var(--Imaginary_color);
+    height: 36px;
+    background-color: var(--Secondary_color);
 }
 
 .second{
-    font-size: 2rem;
-    border: 1px solid red;
-    padding-left: 0.5em;
+    flex: 1;
+    text-align: left;
+    font-size: clamp(0.7rem, 15px, 1.7vh);
+    color: var(--Secondary_color);
 }
+
