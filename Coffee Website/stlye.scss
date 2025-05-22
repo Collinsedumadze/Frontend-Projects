@@ -83,7 +83,7 @@ header {
             display: none;
         }
 
-        @media screen and (max-width : 900px) {
+        /* @media screen and (max-width : 900px) {
             :where(#close-btn, #open-btn) {
                 display: block;
                 font-size: $font-size-m;
@@ -116,8 +116,12 @@ header {
                     font-size: $font-size-s;
                 }
             }
+
+            body.show-menu ul {
+                left: 0;
+            }
         
-        }
+        }*/
     }
 }
 
@@ -202,4 +206,32 @@ header {
     }
 }
 
+.about-section {
+    padding: 120px 40px;
+    background-color: $lightPinkColor;
+
+    .content {
+        display: flex;
+        /* gap: 50px; */
+        justify-content: space-between;
+        align-items: center;
+
+        .img {
+            width: 400px;
+            height: 400px;
+            padding-left: 40px;
+
+            img {
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        .text {
+            width: 40%;
+        }
+    }
+}
 

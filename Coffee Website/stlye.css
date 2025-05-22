@@ -29,6 +29,45 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* @media screen and (max-width : 900px) {
+      :where(#close-btn, #open-btn) {
+          display: block;
+          font-size: $font-size-m;
+      }
+
+      .close {
+          position: absolute;
+          top: 25px;
+          right: 20px;
+
+      }
+
+      ul {
+          display: block;
+          position: fixed;
+          top: 0;
+          left: -393px;
+          width: 300px;
+          height: 100%;
+          background-color: $whiteColor;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding-top: 100px;
+
+
+          a {
+              color: $darkColor;
+              display: block;
+              font-size: $font-size-s;
+          }
+      }
+
+      body.show-menu ul {
+          left: 0;
+      }
+
+  }*/
 }
 header nav .a {
   padding-left: 40px;
@@ -55,35 +94,6 @@ header nav li:hover {
 }
 header nav :where(#close-btn, #open-btn) {
   display: none;
-}
-@media screen and (max-width: 900px) {
-  header nav :where(#close-btn, #open-btn) {
-    display: block;
-    font-size: 1.12rem;
-  }
-  header nav .close {
-    position: absolute;
-    top: 25px;
-    right: 20px;
-  }
-  header nav ul {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 100%;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 100px;
-  }
-  header nav ul a {
-    color: #252525;
-    display: block;
-    font-size: 0.9rem;
-  }
 }
 
 .home-section {
@@ -152,4 +162,30 @@ header nav :where(#close-btn, #open-btn) {
 }
 .home-section .left .image {
   max-width: 50%;
+}
+
+.about-section {
+  padding: 120px 40px;
+  background-color: #faf4f5;
+}
+.about-section .content {
+  display: flex;
+  /* gap: 50px; */
+  justify-content: space-between;
+  align-items: center;
+}
+.about-section .content .img {
+  width: 400px;
+  height: 400px;
+  padding-left: 40px;
+}
+.about-section .content .img img {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.about-section .content .text {
+  width: 40%;
 }/*# sourceMappingURL=stlye.css.map */
