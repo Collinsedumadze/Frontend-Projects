@@ -58,6 +58,14 @@ input {
 
 .login-btn {
     margin: 25px 0 25px 0;
+    cursor: pointer;
+    background-color: aqua;
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    opacity: 1
 }
 
 .forgot-password {
