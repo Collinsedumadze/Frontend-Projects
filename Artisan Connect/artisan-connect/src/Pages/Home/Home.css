@@ -1,0 +1,11 @@
+.home{
+    padding: 20px 10%;
+}
+
+
+
+@media (max-width: 768px) {
+    .home{
+        padding: 20px 30px;
+    }
+}

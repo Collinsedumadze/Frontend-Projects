@@ -1,0 +1,40 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%; /* p-x: 10% */
+    border-bottom: 1px solid #ccc;
+}
+.navbar img{
+    cursor: pointer;
+}
+.navlinks{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.account-section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        padding: 20px 30px;
+    }
+    .navlinks{
+        display: none; /* Hide nav links on small screens */
+    }
+    .left-nav .search{
+        display: none; /* Hide account section on small screens */
+    }
+    
+}
