@@ -6,6 +6,7 @@ import header_playstation_image from "../../assets/header_playstation_image.png"
 import header_macbook_image from "../../assets/header_macbook_image.png"
 
 
+
 const HeaderSlider = () => {
     const sliderData = [
     {

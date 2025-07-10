@@ -1,0 +1,24 @@
+.home-products{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.home-products .p-title{
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+}
+.crad-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.home-products .see-more{
+    display: inline-flex;
+    padding: 10px 20px;
+    margin: auto;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
