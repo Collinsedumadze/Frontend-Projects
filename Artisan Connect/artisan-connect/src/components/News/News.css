@@ -1,0 +1,47 @@
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.news h1{
+    font-weight: 600; 
+}
+.news .input-field{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 800px;
+    height: 60px;
+    white-space: nowrap;
+}
+.news .input-field input{
+    width: 100%;
+    height: 100%;
+    padding-left: 25px ;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+.news .input-field button{
+    margin-left: -80px;
+    background-color: orange;
+    font-size: 15px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+}
+
+
+
+@media(max-width: 768px){
+    .news h1{
+        font-size: 25px; 
+    }
+}
