@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%; /* p-x: 10% */
+    color: var(--subtle-gray);
     border-bottom: 1px solid #ccc;
 }
 .navbar img{
@@ -14,6 +15,15 @@
     display: flex;
     align-items: center;
     gap: 20px;
+}
+.navlinks li a{
+    text-decoration: none;
+    color: var(--subtle-gray);
+    transition: all .3s ease-in;
+}
+.navlinks li a:hover{
+    color: black;
+    font-weight: 500;
 }
 .left-nav{
     display: flex;

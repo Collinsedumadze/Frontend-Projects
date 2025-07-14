@@ -17,13 +17,13 @@
 .f-products .title .dash{
     width: 50px;
     height: 3px;
-    background-color: red;
+    background-color: var(--primary);
     position: absolute;
     right: -40px;
     
 }
 span{
-    color: red;
+    color: var(--primary);
 }
 
 .f-products-container{
@@ -77,7 +77,7 @@ span{
     padding: 5px 10px;
     border: none;
     outline: none;
-    background-color: orange;
+    background-color: var(--primary);
     color: white;
     border-radius: 5px;
 }
@@ -107,7 +107,7 @@ span{
         font-size: 20px;
         border: none;
         outline: none;
-        background-color: orange;
+        background-color:  var(--primary);
         color: white;
         border-radius: 10px;
     }

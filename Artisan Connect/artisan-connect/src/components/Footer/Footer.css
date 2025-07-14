@@ -1,9 +1,59 @@
 footer{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 25px 0 15px 0;
-    border-top: 1px solid #ccc;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10%;
+    border-bottom: 1px solid #ccc;
     margin-top: 40px;
+    padding: 25px 10%;
+}
+.container .logo-div,
+.container .company-div,
+.container .get-in-touch{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+.logo-div img{
+    width: 150px;
+}
+.company-div li{
+    list-style: none;
+}
+.company-div li a{
+    color: var(--subtle-gray);
+    font-size: 14px;
+    text-decoration: none;
+}
+.company-div li a:hover{
+    text-decoration: underline;
+}
+.get-in-touch h2, .company-div h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+footer p{
+    color: var(--subtle-gray);
+    font-size: 14px;
+}
+.p{
+    margin: 15px;
 }
 
+@media (max-width: 768px) {
+    .container{
+        padding: 30px;
+        flex-direction: column;
+    }
+    
+}

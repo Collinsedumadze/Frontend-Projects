@@ -6,7 +6,7 @@
 .home-products .p-title{
     font-size: 25px;
     font-weight: 500;
-    color: #333;
+    color: var(--subtle-gray);
 }
 .crad-container{
     display: grid;
@@ -19,6 +19,12 @@
     margin: auto;
     outline: none;
     background-color: transparent;
-    border: 1px solid gray;
+    border: 1px solid var(--subtle-gray);
 }
 
+
+@media (max-width: 768px) {
+    .crad-container{
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    }
+}

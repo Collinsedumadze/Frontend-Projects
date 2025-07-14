@@ -1,3 +1,11 @@
+:root {
+  --primary: #f97316;        
+  --bg-light: #d2dfec;       
+  --text-dark: #0f172a;      
+  --subtle-gray: #6b7280;    
+  --success: #10b981;   
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -6,4 +14,14 @@
 }
 button{
   cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: var(--bg-light);
     padding: 25px 5%;
     border-radius: 10px;
     overflow: hidden;
@@ -28,11 +28,11 @@
     width: 50%;
 }
 .text-container p{
-    color: orange;
+    color: var(--primary);
 }
 .text-container h1{
     font-weight: 600;
-    color: black;
+    color: var(--text-dark);
 }
 .text-container .btn{
     margin-top: 15px;
@@ -46,14 +46,22 @@
     outline: none;
     cursor: pointer;
     font-weight: 500;
-    background-color: orange;
+    background-color: var(--primary);
     color: white;
 }
 .text-container .btn button:last-child{
+    width: 250px;
     display: inline-flex;
     gap: 15px;
     background-color: transparent;
-    color: black;
+    color: var(--text-dark);
+    
+}
+.text-container .btn button:last-child img{
+    transition: all .3s ease-in-out;
+}
+.text-container .btn button:last-child:hover img{
+    transform: translateX(5px);
 }
 .image-container{
     width: 50%;
@@ -76,13 +84,13 @@
 .dots .dot{
     width: 10px;
     height: 10px;
-    background-color: black;
+    background-color: var(--text-dark);
     border-radius: 50%;
     transition: all 0.5s ease;
     cursor: pointer;
 }
 .dot.active{
-    background: orange;
+    background: var(--primary);
     transform: scale(1.3);
 }
 

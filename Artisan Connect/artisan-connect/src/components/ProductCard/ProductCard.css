@@ -6,7 +6,7 @@
 }
 .product-card-container .image-container{
     width: 100%;
-    background-color: red;
+    background-color: var(--bg-light);
     padding: 10px 20px;
     margin-bottom: 10px;
     display: flex;
@@ -43,7 +43,7 @@
 }
 .product-card-container .sub-title{
     font-size: 12px;
-    color: gray;
+    color: var(--subtle-gray);
     line-height: 20px;
 }
 .product-card-container .star{
@@ -65,7 +65,7 @@
     font-size: 12px;
     padding: 10px 20px;
     outline: none;
-    border: 1px solid gray;
+    border: 1px solid var(--subtle-gray);
     border-radius: 20px;
     background-color: transparent;
 }

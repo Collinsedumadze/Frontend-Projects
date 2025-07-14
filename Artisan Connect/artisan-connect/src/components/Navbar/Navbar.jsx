@@ -10,10 +10,14 @@ const Navbar = () => {
     <div className="navbar">
       <img src={logo} alt="" />
       <div className="navlinks">
-        <li>Home</li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact</a></li>
+        {/* <li>Home</li>
         <li>Shop</li>
         <li>ABout Us</li>
-        <li>Contact</li>
+        <li>Contact</li> */}
       </div>
       <div className="left-nav">
         <img src={search_icon} alt="" className='search'/>
